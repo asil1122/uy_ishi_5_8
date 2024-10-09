@@ -1,0 +1,31 @@
+.header_bottom {
+    background-color: var(--menu-blue);
+}
+
+.block {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.ul {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.catalogy {
+    padding: 15px 80px 15px 60px;
+    background-color: #243c53;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+}
+
+.text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    color: #fff;
+}

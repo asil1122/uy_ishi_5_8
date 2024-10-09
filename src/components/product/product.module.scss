@@ -1,0 +1,58 @@
+.ul{
+    display: flex;
+    
+}
+
+.li{
+    border: 1px solid var(--card-border);
+    border-radius: 8px 0 0 8px;
+    padding: 20px;
+    transition: all 0.4s ease;
+}
+
+.li:hover{
+    box-shadow: 0 15px 20px 0 rgba(42, 82, 117, 0.1);
+}
+
+.type{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+    color: var(--text---grey);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.title{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 130%;
+    color: var(--text---main);
+    margin-bottom: 20px;
+}
+
+.star_block{
+    margin-bottom: 20px;
+}
+
+.old_price{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 130%;
+    text-decoration: line-through;
+    color: var(--text---grey);
+}
+
+.new_price{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 130%;
+    color: var(--text---main);
+    margin-bottom: 20px;
+}
+
+.btn_block{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
