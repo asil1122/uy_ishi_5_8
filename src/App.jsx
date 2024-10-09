@@ -1,14 +1,17 @@
 import React from "react"
 import { Route, Routes } from "react-router-dom"
 import { MainLayout } from "./layout/main-layout"
-import { Home } from "./home"
+import { MainRouter } from "./router/main-router"
 
 function App() {
-
   return (
-      <MainLayout>
-        <Home/>
-      </MainLayout>
+      <Routes>
+        <Route path="/" element={<MainLayout/>}>
+          {MainRouter.map(({id, path, component: Comp }) => (
+              <Route key={id} index={!path && true} path={path} element={ <Comp /> } />
+          ))}
+        </Route>
+      </Routes>
   )
 }
 

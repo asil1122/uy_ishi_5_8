@@ -3,6 +3,7 @@ import style from "./product.module.scss"
 import data2 from '../../data/data2'
 import icon from "../../assets/kor.svg"
 import { Button } from '../ui/button/button'
+import { Link } from 'react-router-dom'
 
 export const Product = () => {
     return (
@@ -20,8 +21,10 @@ export const Product = () => {
                     <del className={style.old_price}>{item.oldP}</del>
                     <p className={style.new_price}>{item.newP}</p>
                     <div className={style.btn_block}>
-                        <Button variant={'secondry'} size={'lg'} type={'submit'}>Купить в 1 клик</Button>
-                        <img src={icon} alt="icon" />
+                        <Link className={style.btn_block} to={"/product-detail"}>
+                            <Button variant={'secondry'} size={'lg'} type={'submit'}>Купить в 1 клик</Button>
+                            <img src={icon} alt="icon" />
+                        </Link>
                     </div>
                 </li>
             ))}

@@ -4,6 +4,7 @@ import logo from "../../assets/logo.svg"
 import icon from "../../assets/koz.svg"
 import { Button } from '../../components/ui/button'
 import { HeaderBottom } from '../../components/header-bottom'
+import { Link } from 'react-router-dom'
 
 export const Header = () => {
   return (
@@ -12,7 +13,9 @@ export const Header = () => {
         <div className='container'>
             <div className={style.block}>
                 <div className={style.left}>
-                    <img src={logo} alt="logo" />
+                    <Link to={"/"}>
+                        <img src={logo} alt="logo" />
+                    </Link>
                 </div>
                 <div className={style.right}>
                     <ul className={style.ul}>

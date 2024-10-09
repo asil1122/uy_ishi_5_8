@@ -3,12 +3,12 @@ import { Header } from './header'
 import { Outlet } from 'react-router-dom'
 import { Footer } from './footer'
 
-export const MainLayout = ({children}) => {
+export const MainLayout = () => {
   return (
     <div className='layout'>
         <div className='wrap'>
             <Header/>
-              {children}
+            <Outlet/>
         </div>
         <Footer/>
     </div>
